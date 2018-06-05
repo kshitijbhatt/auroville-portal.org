@@ -26,11 +26,18 @@ a:hover { text-decoration:none; }
 	--bg-avc:#ec6669;
 	--gray-dark:#6c617d;
   --bg-agp:#95C156;
-  --bg-avr:#5fb8c4;
+  --bg-avr:#57B9C3;
   --bg-collab:#EA6743;
   --bg-cgp:#59b891;
 }
 
+a.fa:hover{
+  color:white;
+}
+a.fa {
+  color:#f1f1f1;
+  padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+}
 
 .bg-avc{
   background-color: #ec6669;
@@ -43,8 +50,8 @@ a:hover { text-decoration:none; }
 }
 
 .bg-avr{
-  background-color: #5fb8c4;
-  background-color: var(--bg-avr, #5fb8c4);
+  background-color: #57B9C3;
+  background-color: var(--bg-avr, #57B9C3);
 }
 .bg-collab{
   background-color: #EA6743;
@@ -63,6 +70,9 @@ a:hover { text-decoration:none; }
 	color: var(--gray, gray);
 
 
+}
+.card-img-top, .card-body{
+  cursor: pointer;
 }
 
 .card:hover {
@@ -124,6 +134,6 @@ code {
    }
 
 .card-img-top{
-  width: 101% !important;
-  transform:translateX(-0.5%);
+  object-fit: cover;
+  object-position: top;
 }
