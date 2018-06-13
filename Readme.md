@@ -3,3 +3,11 @@
 
 ## File Structure
 - File structure is simple to understand and is expected to be converted in an Angular based web app
+- Scripts used are 
+	1. Bootstrap
+	2. jQuery
+	3. Custom
+- The final style sheet has been minified for faster load times
+- Css used in final distribution are
+	1. Bootstrap.min
+	2. Ctyle.min
