@@ -45,6 +45,13 @@ p::first-letter {
   font-size: 200%;
 }
 
+.sticky{
+  position: sticky;
+  position: -webkit-sticky;
+  top:0px;
+  z-index: 1;
+}
+
 .bg-avc {
   background-color: #ec6669;
   background-color: var(--bg-avc, #ec6669);
