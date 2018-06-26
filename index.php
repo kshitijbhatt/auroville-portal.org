@@ -1,4 +1,22 @@
 <?php include("header.php"); ?>
+ <?php
+include("db/Connection.php"); 
+include("db/Cards.php"); 
+
+// Create connection
+$card = new Cards();
+
+//echo $card->getAll();
+
+foreach ($card->getAll() as $row) {
+   echo $row['title'];
+}
+
+echo $card->insert();
+
+?> 
+
+
 <div id="main" class="container align-content-center">
             	<div class="card-deck my-3">
                     	<div class="card">
