@@ -15,15 +15,48 @@ class Cards extends Connection {
 			    echo "0 results";
 			}
 	  	}
-	  	//$title, $description, $url, $image, $color, $facebook, $twitter, $instagram, $youtube, $linkedin
-	  	public function insert(){
-	  		$sql = "INSERT INTO portal_sites (title, description) VALUES ('John', 'Doe')";
+	  	//
+	  	public function insertCard($title, $description, $url, $image, $color, $facebook, $twitter, $instagaram, $youtube, $linkedin){
 
-	  		if (parent::query($sql) === TRUE) {
-			    echo "New record created successfully";
-			} else {
-			    echo "Error: " . $sql;
-			}
-	
+	  		$array_set = array(
+                'title'      	=> $title,
+                'description'  	=> $description,
+                'url'  			=> $url,
+                'image'  		=> $image,
+                'color'  		=> $color,
+                'facebook'  	=> $facebook,
+                'twitter'  		=> $twitter,
+                'instagaram' 	=> $instagaram,
+                'youtube'  		=> $youtube,
+                'linkedin'  	=> $linkedin
+				
+            );
+
+            return parent::insert('portal_sites', $array_set);
 	  	}
+
+	  	public function deleteCard( $id )
+        {
+            return parent::delete( $this->cardTable(), 'id', $id) ;
+        }
+
+        public function updateCard( $id, $title, $description, $url, $image, $color, $facebook, $twitter, $instagaram, $youtube, $linkedin) {
+        	$array_set = array(
+                'title'      	=> $title,
+                'description'  	=> $description,
+                'url'  			=> $url,
+                'image'  		=> $image,
+                'color'  		=> $color,
+                'facebook'  	=> $facebook,
+                'twitter'  		=> $twitter,
+                'instagaram' 	=> $instagaram,
+                'youtube'  		=> $youtube,
+                'linkedin'  	=> $linkedin
+				
+            );
+
+			$where = array('id' => $id);
+			return $this->update($this->cardTable(), $array_set, $where);
+		  }
+		
 }
