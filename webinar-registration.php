@@ -1,14 +1,14 @@
 <?php include("header.php"); ?>
 <div id="main" class="container align-content-center py-5">
 <div class="row">
-<div class="card-group">
-    <div class="card mr-3 border-0 shadow-none">
+<div class="card-group p-2">
+    <div class="card mr-md-3 m-0 border-0 shadow-none">
         <div class="card py-2">
                 <div class="card-header bg-white text-center">
                 <img src="img/avc_logo.png" alt="Auroville Consulting" height="72">
                 </div>
-                <div class="card-header bg-white">
-                    <h5 class="card-title">
+                <div class="card-header bg-white border-0">
+                    <h5 class="card-title m-0">
                     Register for webinar
                     </h5>
                 </div>
@@ -30,7 +30,7 @@
             
         </div>
     </div>
-    <div class="col-lg-6 col-12 ml-lg-3 my-3 my-lg-0 border-0 shadow-none">
+    <div class="col-lg-7 col-md-5 col-12 ml-md-3 my-3 my-lg-0 border-0 shadow-none">
         <div class="mx-2 py-2">
             <p>
             Auroville Consulting (AVC) invites you to a webinar on our recent report titled Water-Energy-Land-Livelihood Nexus. The agricultural sector in the country is distressed, water stress being a major reason. The agrarian distress is also intertwined with the situation of the power sector. Agricultural supply in the state of Tamil Nadu is free of cost, and presents a major subsidy burden on the state. Solving this water-energy nexus will required a holistic look at it. In our report, we analyse the benefits from such an approach for all the stakeholders: water security and better livelihood for farmers, easing of the massive financial burden on the state and the electricity utility, and benefits to the public at large through job creation and lower emissions. The approach considered consists of utilising the combined benefits of grid-connected solar PV at farms, energy efficient pumps and advanced irrigation (micro and precision irrigation).
